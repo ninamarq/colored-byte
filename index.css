@@ -3,5 +3,104 @@
 }
 
 body {
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #E5E5E5;
   font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+
+body #section-title {
+  margin: 4.188rem 0 2rem 0; /* 67px 32px*/
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.75rem; /* 44px */
+  text-align: center;
+  letter-spacing: 0.095em;
+  color: #000000;
+}
+
+body #first-right-card {
+  background-image: url("./assets//image2.png");
+}
+
+body #second-right-card {
+  background-image: url("./assets//image3.png");
+}
+
+body #third-right-card {
+  background-image: url("./assets//image4.png");
+}
+
+body #fourth-right-card {
+  background-image: url("./assets//image5.png");
+}
+
+body .page-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.page-container .single-image-container {
+  width: 100%;
+  height: 100%;
+  margin-right: .5rem;
+  background-image: url("./assets/image1.png");
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 4.688rem;
+}
+
+body .page-container .title-collection {
+  margin: 2rem 0;
+}
+
+.page-container .title-collection {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
+  letter-spacing: 0.2em;
+  color: #FFFFFF;
+  margin: 2rem;
+}
+
+.page-container .button-collection {
+  border: 2px solid #FFFFFF;
+  padding: 1.25rem 1.75rem;
+  background-color: rgba(255, 255, 255, 0);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+body .multiples-images-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid red;
+  margin: 0 .5rem;
+  padding: 0;
+}
+
+.multiples-images-container .multiple-cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 4.688rem;
 }
