@@ -23,7 +23,7 @@ body h1 {
 body #section-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: auto 0;
+  margin: 0 auto;
   width: 100%;
   /* Setting height of 80% parent's height */
   height: 80vh;
@@ -61,6 +61,7 @@ body .image-card {
 body #section-container #single-image-container {
   background-image: url("./assets/image1.png");
   padding: 4.688rem;
+  height: 80vh;
 }
 
 body #section-container h2 {
@@ -92,7 +93,7 @@ body #section-container button {
   transition: .5s;
 }
 
-body .multiples-images-container {
+body #multiples-images-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: .5rem;
@@ -100,6 +101,28 @@ body .multiples-images-container {
   margin-left: .5rem;
 }
 
-.multiples-images-container .multiple-cards {
+#multiples-images-container .multiple-cards {
   padding: 4rem 2rem;
+}
+
+@media screen and (min-width : 320px) and (max-width : 769px) {
+}
+
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+  body #section-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto 0;
+    height: 100vh;
+  }
+
+  body #section-container #single-image-container {
+    height: 100%;
+    width: 100%;
+  }
+
+  body #multiples-images-container {
+    margin: .5rem 0 0 0;
+    height: 90%;
+  }
 }
