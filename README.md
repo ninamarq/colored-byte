@@ -11,11 +11,15 @@ Website made according to the screen sizes shared and projected by figma.
 
 ## 🖼️ Imagens do Projeto
 
-Example layout: 1440x1024
-<div align="center">  
-  <img width="80%" src="./assets/1440x1024.png" />
+<div align="center">
+  <h3>CSS Sketch 🎬</h3>
+  <img src="./assets/planning.png" />
 </div>
 
+<div align="center">  
+  <p>Example layout: 1440x1024</p>
+  <img width="80%" src="./assets/1440x1024.png" />
+</div>
 
 ## 🧰 Technologies and Libraries
 
