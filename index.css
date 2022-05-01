@@ -120,45 +120,45 @@ body #mosaic-container .multiple-cards {
 
 @media screen and (min-width : 1px) and (max-width : 480px) {
   body h1 {
-    margin: 4rem 0 3.125rem 0;
     font-size: 1.5rem;
   }
 
   body #image-container {
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
+    width: 100%;
   }
 
   body #image-container #main-image {
+    min-height: 50vh;
     padding: 0 0 4rem 3.125rem;
-    height: 25%;
   }
 
   body #mosaic-container {
     display: flex;
     flex-direction: column;
     margin: .5rem 0 0 0;
-    height: 100%;
   }
-
+  
   #mosaic-container .column-1, #mosaic-container .column-2 {
     display: flex;
     flex-direction: column;
     row-gap: .5rem;
-    height: 100%;
-  }
-
+    min-height: 100vh;
+  }  
+  
   body #mosaic-container .multiple-cards {
-    height: 100%;
     padding: 0 0 4rem 3.125rem;
   }
+
 }
 
 @media screen and (min-width : 481px) and (max-width : 1024px) {
   body #image-container {
     display: grid;
     grid-template-columns: 1fr;
+    height: 90vh;
     margin: auto 0;
   }
 
