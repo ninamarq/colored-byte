@@ -14,9 +14,9 @@ body h1 {
   font-weight: 600;
   line-height: 2.75rem;
   letter-spacing: 0.095em;
-  font-size: 2vh;
+  font-size: 2rem;
   color: #000000;
-  margin: 4vh 0 2vh 0;
+  margin: 4rem 0 2rem 0;
 }
 
 #image-container {
@@ -32,21 +32,21 @@ body h1 {
 #image-container h2 {
   font-style: normal;
   font-weight: 700;
-  font-size: 1.5vh;
+  font-size: 1.5vw;
   line-height: 1.8125rem;
   letter-spacing: 0.2em;
   color: #FFFFFF;
-  margin: 2vh 0;
+  margin: 0 3rem 2rem 0;
 }
 
 #image-container button {
   background-color: transparent;
   border: 2px solid #FFFFFF;
-  padding: 1.5vh 2.5vh;
+  padding: 1.5vw 2.5vw;
   margin: 0;
   font-style: normal;
   font-weight: 700;
-  font-size: 1vh;
+  font-size: 1.25vw;
   line-height: 1.25rem;
   letter-spacing: 0.1em;
   color: #FFFFFF;
@@ -140,6 +140,7 @@ body #mosaic-container .multiple-cards {
 
   body #image-container h2 {
     font-size: 1.25rem;
+    margin: 0 5rem 2rem 0;
   }
 
   body #image-container #main-image {
@@ -174,18 +175,27 @@ body #mosaic-container .multiple-cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 80vh;
+    height: 85vh;
     margin: 0 auto;
+  }
+
+  body h1 {
+    font-size: 2rem;
+  }
+
+  body #image-container h2 {
+    font-size: 1.5rem;
   }
 
   body #image-container #main-image {
     height: 100%;
     width: 100%;
-    padding: 0 0 4vh 3.125vh;
+    padding: 0 0 4rem 3.125rem;
   }
 
   body #image-container button {
-    padding: .5rem 1rem;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
   }
 
   body #mosaic-container {
@@ -196,7 +206,8 @@ body #mosaic-container .multiple-cards {
   }
   
   body #mosaic-container .multiple-cards {
-    padding: 0 0 4vh 3.125vh;
+    padding: 0 1rem 4rem 3.125rem;
+    height: 22.5vh;
   }
   
   #mosaic-container .column-1, #mosaic-container .column-2 {
