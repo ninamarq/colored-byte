@@ -160,7 +160,6 @@ body #mosaic-container .multiple-cards {
     display: grid;
     grid-template-columns: 1fr;
     margin: auto 0;
-    background-color: red;
   }
 
   body #image-container #main-image {
