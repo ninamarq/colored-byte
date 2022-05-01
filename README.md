@@ -1,6 +1,6 @@
-# colored-byte
+# Shopify-Training
 
-Olá Lucas!
+Olá! 😄
 
 Link projeto: https://colored-byte.vercel.app/
 
