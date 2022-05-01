@@ -1,26 +1,25 @@
 # Shopify-Training
 
-Olá! 😄
+Hello! 😄
 
-Link projeto: https://colored-byte.vercel.app/
+Project link: https://colored-byte.vercel.app/
 
-<!-- Sobre o Projeto -->
-## Sobre o Projeto
-HTML + CSS Vanilla para estudos e teste para Colored Byte.
-Projeto realizado de acordo com as dimensões de telas fornecidas pelo figma.
+<!-- About -->
+## About the Project
+HTML + CSS Vanilla for study and to be challenged by Colored-Byte.
+Website made according to the screen sizes shared and projected by figma.
 
 ## 🖼️ Imagens do Projeto
 
-<h2>Example: 1440x1024</h2>
+Example layout: 1440x1024
 <div align="center">  
   <img width="80%" src="./assets/1440x1024.png" />
 </div>
 
 
-## 🧰 Tecnologias e Bibliotecas
+## 🧰 Technologies and Libraries
 
 *  HTML
 *  CSS
 
-Espero que gostem, feito com amor e estudos (muito a melhorar, mas dei o meu melhor)! 💙
-
+Hope that you guys like it, it was made with love and really made with all of my efforts! 💙
