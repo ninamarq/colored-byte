@@ -1,7 +1,7 @@
-*, html, body {
-  box-sizing: border-box;
+html, body, * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,60 +11,25 @@ body {
 
 body h1 {
   text-align: center;
-  margin: 4.188rem 0 2rem 0;
-  width: 100%;
   font-weight: 600;
-  font-size: 2rem;
   line-height: 2.75rem;
   letter-spacing: 0.095em;
+  font-size: 2rem;
   color: #000000;
+  margin: 2rem 0 1rem 0;
 }
 
-body #section-container {
+#image-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 0 auto;
+  margin: auto 0;
   width: 100%;
-  /* Setting height of 80% parent's height */
   height: 80vh;
-  /* Breaking words when width got limited */
+  column-gap: .5rem;
   word-break: break-word;
 }
 
-body #first-right-card {
-  background-image: url("./assets//image2.png");
-}
-
-body #second-right-card {
-  background-image: url("./assets//image3.png");
-}
-
-body #third-right-card {
-  background-image: url("./assets//image4.png");
-}
-
-body #fourth-right-card {
-  background-image: url("./assets//image5.png");
-}
-
-body .image-card {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  /* Positioning content inside cards */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-}
-
-body #section-container #single-image-container {
-  background-image: url("./assets/image1.png");
-  padding: 4.688rem;
-  height: 80vh;
-}
-
-body #section-container h2 {
+#image-container h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 1.5rem;
@@ -74,7 +39,7 @@ body #section-container h2 {
   margin: 2rem 0;
 }
 
-body #section-container button {
+#image-container button {
   background-color: transparent;
   border: 2px solid #FFFFFF;
   padding: 1.25rem 1.75rem;
@@ -87,42 +52,129 @@ body #section-container button {
   transition: .5s;
 }
 
-#section-container button:hover {
+#image-container button:hover {
   opacity: 0.8;
   cursor: pointer;
   transition: .5s;
 }
 
-body #multiples-images-container {
+#image-container #main-image {
+  background-image: url("./assets/image1.png");
+  padding: 0 0 4.25rem 4.688rem ;
+  height: 100%;
+}
+
+
+body #column-1-first {
+  background-image: url("./assets//image2.png");
+}
+
+body #column-1-second {
+  background-image: url("./assets//image3.png");
+}
+
+body #column-2-first {
+  background-image: url("./assets//image4.png");
+}
+
+body #column-2-second {
+  background-image: url("./assets//image5.png");
+}
+
+body .image-card {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+#mosaic-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   row-gap: .5rem;
+}
+
+#mosaic-container .column-1, #mosaic-container .column-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   column-gap: .5rem;
-  margin-left: .5rem;
+  width: 100%;
+  height: 100%;
 }
 
-#multiples-images-container .multiple-cards {
-  padding: 4rem 2rem;
+#column-1-first, #column-1-second {
+  width: 100%;
+  height: 100%;
 }
 
-@media screen and (min-width : 320px) and (max-width : 769px) {
+#column-2-first, #column-2-second {
+  width: 100%;
+  height: 100%;
 }
 
-@media screen and (min-width : 768px) and (max-width : 1024px) {
-  body #section-container {
+body #mosaic-container .multiple-cards {
+  padding: 0 0 4rem 2rem;
+}
+
+@media screen and (min-width : 1px) and (max-width : 480px) {
+  body h1 {
+    font-size: 1.5rem;
+  }
+  
+  body #image-container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+  }
+
+  body #image-container #main-image {
+    min-height: 40vh;
+    padding: 0 0 4rem 3.125rem;
+  }
+
+  body #mosaic-container {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 0 0 0;
+  }
+
+  #mosaic-container .column-1, #mosaic-container .column-2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+  }
+
+  body #mosaic-container .multiple-cards {
+    padding: 0 0 4rem 3.125rem;
+    min-height: 30vh;
+  }
+}
+
+@media screen and (min-width : 481px) and (max-width : 1024px) {
+  body #image-container {
     display: grid;
     grid-template-columns: 1fr;
     margin: auto 0;
     height: 100vh;
   }
 
-  body #section-container #single-image-container {
-    height: 100%;
+  body #image-container #main-image {
+    height: 80vh;
     width: 100%;
+    padding: 0 0 4rem 3.125rem;
   }
 
-  body #multiples-images-container {
+  body #mosaic-container {
     margin: .5rem 0 0 0;
-    height: 90%;
+  }
+
+  body #mosaic-container .multiple-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 4rem 3.125rem;
+    height: 40vh;
   }
 }
