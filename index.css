@@ -1,0 +1,217 @@
+html, body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body h1 {
+  text-align: center;
+  font-weight: 600;
+  line-height: 2.75rem;
+  letter-spacing: 0.095em;
+  font-size: 2rem;
+  color: #000000;
+  margin: 4rem 0 2rem 0;
+}
+
+#image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto 0;
+  width: 100%;
+  height: 80vh;
+  column-gap: .5rem;
+  word-break: break-word;
+}
+
+#image-container h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5vw;
+  line-height: 1.8125rem;
+  letter-spacing: 0.2em;
+  color: #FFFFFF;
+  margin: 0 3rem 2rem 0;
+}
+
+#image-container button {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  padding: 1.5vw 2.5vw;
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25vw;
+  line-height: 1.25rem;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  transition: .5s;
+}
+
+#image-container button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: .5s;
+}
+
+#image-container #main-image {
+  background-image: url("./assets/image1.png");
+  padding: 0 0 4.25rem 4.688rem ;
+  height: 100%;
+}
+
+body #column-1-first {
+  background-image: url("./assets//image2.png");
+}
+
+body #column-1-second {
+  background-image: url("./assets//image3.png");
+}
+
+body #column-2-first {
+  background-image: url("./assets//image4.png");
+}
+
+body #column-2-second {
+  background-image: url("./assets//image5.png");
+}
+
+body .image-card {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+#mosaic-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: .5rem;
+}
+
+#mosaic-container .column-1, #mosaic-container .column-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: .5rem;
+  width: 100%;
+  height: 100%;
+}
+
+#column-1-first, #column-1-second {
+  width: 100%;
+  height: 100%;
+}
+
+#column-2-first, #column-2-second {
+  width: 100%;
+  height: 100%;
+}
+
+body #mosaic-container .multiple-cards {
+  padding: 0 0 4rem 2rem;
+}
+
+@media screen and (min-width : 1px) and (max-width : 480px) {
+  body #image-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 0 5vh auto;
+  }
+
+  body #image-container button {
+    height: fit-content;
+    font-size: .75rem;
+    padding: .75rem 1rem;
+  }
+
+  body h1 {
+    font-size: 1.5rem;
+    margin: 1.75rem 0 1rem 0;
+  }
+
+  body #image-container h2 {
+    font-size: 1.25rem;
+    margin: 0 5rem 2rem 0;
+  }
+
+  body #image-container #main-image {
+    padding: 0 0 7% 10%;
+    height: 25vh;
+  }
+
+  body #mosaic-container {
+    display: grid;
+    margin: .5rem 0 0 0;
+    row-gap: .5rem;
+    height: 100%;
+  }
+
+  #mosaic-container .column-1, #mosaic-container .column-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    column-gap: .5rem;
+    row-gap: .5rem;
+    height: 100%;
+  }
+
+  body #mosaic-container .multiple-cards {
+    height: 90%;
+    padding: 0 0 7% 10%;
+  }
+}
+
+@media screen and (min-width : 481px) and (max-width : 1024px) {
+  body #image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85vh;
+    margin: 0 auto;
+  }
+
+  body h1 {
+    font-size: 2rem;
+  }
+
+  body #image-container h2 {
+    font-size: 1.5rem;
+  }
+
+  body #image-container #main-image {
+    height: 100%;
+    width: 100%;
+    padding: 0 0 4rem 3.125rem;
+  }
+
+  body #image-container button {
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  body #mosaic-container {
+    margin: .5vh 0 0 0;
+    width: 100%;
+    height: 100%;
+    row-gap: .5vh;
+  }
+  
+  body #mosaic-container .multiple-cards {
+    padding: 0 1rem 4rem 3.125rem;
+    height: 22.5vh;
+  }
+  
+  #mosaic-container .column-1, #mosaic-container .column-2 {
+    column-gap: .5vh;
+    height: 100%;
+  }
+}
