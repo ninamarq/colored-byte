@@ -64,7 +64,6 @@ body h1 {
   height: 100%;
 }
 
-
 body #column-1-first {
   background-image: url("./assets//image2.png");
 }
@@ -121,35 +120,38 @@ body #mosaic-container .multiple-cards {
 
 @media screen and (min-width : 1px) and (max-width : 480px) {
   body h1 {
+    margin: 4rem 0 3.125rem 0;
     font-size: 1.5rem;
   }
-  
+
   body #image-container {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 90vh;
   }
 
   body #image-container #main-image {
-    min-height: 40vh;
     padding: 0 0 4rem 3.125rem;
+    height: 25%;
   }
 
   body #mosaic-container {
     display: flex;
     flex-direction: column;
     margin: .5rem 0 0 0;
+    height: 100%;
   }
 
   #mosaic-container .column-1, #mosaic-container .column-2 {
     display: flex;
     flex-direction: column;
     row-gap: .5rem;
+    height: 100%;
   }
 
   body #mosaic-container .multiple-cards {
+    height: 100%;
     padding: 0 0 4rem 3.125rem;
-    min-height: 30vh;
   }
 }
 
@@ -158,23 +160,21 @@ body #mosaic-container .multiple-cards {
     display: grid;
     grid-template-columns: 1fr;
     margin: auto 0;
-    height: 100vh;
+    background-color: red;
   }
 
   body #image-container #main-image {
-    height: 80vh;
+    height: 100%;
     width: 100%;
     padding: 0 0 4rem 3.125rem;
   }
 
   body #mosaic-container {
     margin: .5rem 0 0 0;
+    height: 100%;
   }
 
   body #mosaic-container .multiple-cards {
-    display: flex;
-    flex-wrap: wrap;
     padding: 0 0 4rem 3.125rem;
-    height: 40vh;
   }
 }
